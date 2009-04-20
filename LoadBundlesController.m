@@ -24,9 +24,9 @@
 	if (!array) array = [NSArray array];
 	self.bundleInfo = array;
 	NSError *err = nil;
-	if (![[NSFileManager defaultManager] fileExistsAtPath:@"/Library/InputManagers/LoadBundles/LoadBundleInputManager.bundle"])
+	// if (![[NSFileManager defaultManager] fileExistsAtPath:@"/Library/InputManagers/LoadBundles/LoadBundleInputManager.bundle"])
 		[self installBundle:&err];
-	NSLog(@"%s %@", _cmd, err);
+	if (err) NSLog(@"%s %@", _cmd, err);
 }
 
 - (BOOL)installBundle:(NSError **)anError
@@ -90,12 +90,18 @@
 		}
 	}
 	
-	char *args[4];
-	args[0] = "-R";
-	args[1] = "root:admin";
-	args[3] = "/Library/InputManagers";
-	args[4] = NULL;
-	myStatus = AuthorizationExecuteWithPrivileges(myAuthorizationRef, "/usr/sbin/chown", 0, args, NULL);
+	// Change ownership if necessary
+	NSDictionary *attrs = [fm fileAttributesAtPath:@"/Library/InputManagers/LoadBundles" traverseLink:NO];
+	NSString *groupName = [attrs objectForKey:NSFileGroupOwnerAccountName];
+	NSString *ownerName = [attrs objectForKey:NSFileOwnerAccountName];
+	if (![groupName isEqualToString:@"admin"] || ![ownerName isEqualToString:@"root"]) {
+		// Must use a shell script (or secondary application) since chown fails with AuthorizationExecuteWithPrivileges
+		// for some reason that escapes me.
+		char *args[2];
+		args[0] = (char *)[[[NSBundle mainBundle] pathForResource:@"changeownership" ofType:@"sh"] fileSystemRepresentation];
+		args[1] = NULL;
+		myStatus = AuthorizationExecuteWithPrivileges(myAuthorizationRef, "/bin/sh", 0, args, NULL);
+	}
 	
 	return true;
 	

@@ -401,9 +401,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>1D291E540F0C4AF1004BCAF4</string>
+				<string>1D8FA9200F9D00D4007B50A4</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>1D291E550F0C4AF1004BCAF4</string>
+				<string>1D8FA9210F9D00D4007B50A4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -522,7 +522,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>252465967.60774601</real>
+	<real>261947604.63457301</real>
 	<key>ToolbarDisplayMode</key>
 	<integer>1</integer>
 	<key>ToolbarIsVisible</key>
@@ -537,10 +537,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1CD10A99069EF8BA00B06720</string>
+		<string>/Users/ghansard/Projects/github/LoadBundles/LoadBundles.xcodeproj</string>
 		<string>1DFA55BE0EF4AB57009B2CDA</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>/Users/ghansard/Projects/LoadBundles/LoadBundles.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>412 481 690 397 0 0 1440 878 </string>
@@ -622,7 +620,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1DFA55BE0EF4AB57009B2CDA</string>
-				<string>1D291E5F0F0C4C2E004BCAF4</string>
+				<string>1D8FA9220F9D00D4007B50A4</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -633,7 +631,7 @@
 			<key>WindowToolGUID</key>
 			<string>1DFA55BE0EF4AB57009B2CDA</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

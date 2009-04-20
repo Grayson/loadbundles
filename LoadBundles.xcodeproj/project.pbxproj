@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D291D970F0C49E2004BCAF4 /* LoadBundleIM.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA55AC0EF4A2DD009B2CDA /* LoadBundleIM.m */; };
+		1D8FA9520F9D19A8007B50A4 /* changeownership.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1D8FA9510F9D19A8007B50A4 /* changeownership.sh */; };
 		1DFA55AD0EF4A2DD009B2CDA /* LoadBundleIM.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA55AC0EF4A2DD009B2CDA /* LoadBundleIM.m */; };
 		1DFA55B00EF4A3A8009B2CDA /* LoadBundleInputManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1DFA559B0EF4A274009B2CDA /* LoadBundleInputManager.bundle */; };
 		1DFA55B40EF4A3BE009B2CDA /* LoadBundlesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA55B30EF4A3BE009B2CDA /* LoadBundlesController.m */; };
@@ -33,6 +34,7 @@
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1D8FA9510F9D19A8007B50A4 /* changeownership.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = changeownership.sh; sourceTree = "<group>"; };
 		1DFA559B0EF4A274009B2CDA /* LoadBundleInputManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadBundleInputManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DFA559C0EF4A274009B2CDA /* LoadBundleInputManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoadBundleInputManager-Info.plist"; sourceTree = "<group>"; };
 		1DFA55AB0EF4A2DD009B2CDA /* LoadBundleIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadBundleIM.h; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				1D8FA9510F9D19A8007B50A4 /* changeownership.sh */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DFA56450EF4B971009B2CDA /* Info in Resources */,
+				1D8FA9520F9D19A8007B50A4 /* changeownership.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
