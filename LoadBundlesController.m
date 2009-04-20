@@ -119,6 +119,7 @@
 	[array addObject:[NSDictionary dictionaryWithObjectsAndKeys:applicationPath, @"application", bundlePath, @"bundle", nil]];
 	self.bundleInfo = array;
 	[[NSUserDefaults standardUserDefaults] setObject:array forKey:BUNDLE_INFO_KEY];
+	[[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (IBAction)delete:(id)sender {
@@ -132,6 +133,7 @@
 	for (i=0; i < count; i++) [array removeObjectAtIndex:indexes[i]];
 	self.bundleInfo = array;
 	[[NSUserDefaults standardUserDefaults] setObject:array forKey:BUNDLE_INFO_KEY];
+	[[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 @end
